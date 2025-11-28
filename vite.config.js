@@ -20,25 +20,25 @@ export default defineConfig({
         orientation: 'portrait-primary',
         icons: [
           {
-            src: 'pwa-192x192.svg',
+            src: '/pwa-192x192.svg',
             sizes: '192x192',
             type: 'image/svg+xml',
             purpose: 'any'
           },
           {
-            src: 'pwa-512x512.svg',
+            src: '/pwa-512x512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'any'
           },
           {
-            src: 'pwa-192x192.svg',
+            src: '/pwa-192x192.svg',
             sizes: '192x192',
             type: 'image/svg+xml',
             purpose: 'maskable'
           },
           {
-            src: 'pwa-512x512.svg',
+            src: '/pwa-512x512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
             purpose: 'maskable'
@@ -46,13 +46,13 @@ export default defineConfig({
         ],
         screenshots: [
           {
-            src: 'pwa-192x192.svg',
+            src: '/pwa-192x192.svg',
             sizes: '192x192',
             type: 'image/svg+xml',
             form_factor: 'narrow'
           },
           {
-            src: 'pwa-512x512.svg',
+            src: '/pwa-512x512.svg',
             sizes: '512x512',
             type: 'image/svg+xml',
             form_factor: 'wide'
@@ -67,7 +67,7 @@ export default defineConfig({
             url: '/?action=camera',
             icons: [
               {
-                src: 'pwa-192x192.svg',
+                src: '/pwa-192x192.svg',
                 sizes: '192x192',
                 type: 'image/svg+xml'
               }
@@ -80,7 +80,7 @@ export default defineConfig({
             url: '/contacts',
             icons: [
               {
-                src: 'pwa-192x192.svg',
+                src: '/pwa-192x192.svg',
                 sizes: '192x192',
                 type: 'image/svg+xml'
               }
