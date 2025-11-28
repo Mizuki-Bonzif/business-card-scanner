@@ -1,0 +1,329 @@
+.contact-index-page {
+    padding: 10px;
+    padding-bottom: calc(var(--nav-height) + 20px);
+    background-color: #ffffff;
+}
+
+.index-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    padding: 10px 0;
+    z-index: 100;
+}
+
+.search-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1.5px solid #d0d0d0;
+    background: #f9f9f9;
+    font-size: 0.95rem;
+    font-family: inherit;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: #ffffff;
+}
+
+.filter-btn {
+    background: #f0f0f0;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+    flex-shrink: 0;
+}
+
+.filter-btn:active {
+    background: #e0e0e0;
+}
+
+.filter-menu {
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 15px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.filter-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.filter-section h4 {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.section-header h4 {
+    margin: 0;
+}
+
+.add-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-btn:active {
+    background: var(--primary-dark);
+}
+
+.filter-section button {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
+    margin: 5px 0;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #555;
+    transition: background 0.2s, color 0.2s;
+}
+
+.filter-section button.active {
+    background: var(--primary-color);
+    color: white;
+    font-weight: 600;
+}
+
+.filter-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.filter-item button {
+    flex: 1;
+    margin: 0;
+    text-align: left;
+}
+
+.delete-btn {
+    width: 28px !important;
+    padding: 6px !important;
+    background: #ffebee !important;
+    color: #c62828 !important;
+    margin: 0 !important;
+    font-size: 0.85rem !important;
+    flex-shrink: 0 !important;
+}
+
+.delete-btn:active {
+    background: #ef5350 !important;
+    color: white !important;
+}
+
+.filter-actions {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.bulk-select-btn {
+    width: 100%;
+    padding: 10px;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.bulk-select-btn:active {
+    background: var(--primary-dark);
+}
+
+.bulk-actions {
+    margin-top: 10px;
+    padding: 10px;
+    background: #e3f2fd;
+    border-radius: 6px;
+}
+
+.bulk-actions p {
+    margin: 0 0 10px 0;
+    font-size: 0.9rem;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.bulk-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.bulk-options select {
+    padding: 8px 10px;
+    border: 1.5px solid var(--primary-color);
+    border-radius: 6px;
+    background: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.bulk-options select:focus {
+    outline: none;
+    border-color: var(--primary-dark);
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+
+.modal {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    min-width: 280px;
+    max-width: 400px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.modal h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1.5px solid #d0d0d0;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.modal input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-confirm, .btn-cancel {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-confirm {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-confirm:active {
+    background: var(--primary-dark);
+}
+
+.btn-cancel {
+    background: #f0f0f0;
+    color: #555;
+}
+
+.btn-cancel:active {
+    background: #e0e0e0;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-wrapper {
+    position: relative;
+}
+
+.card-checkbox {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.card-wrapper.selected {
+    opacity: 0.7;
+}
+
+.empty-state {
+    text-align: center;
+    color: #999;
+    margin-top: 50px;
+    padding: 20px;
+}

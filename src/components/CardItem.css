@@ -1,0 +1,185 @@
+.card-item {
+    background: white;
+    border-radius: 10px;
+    border: 1.5px solid #e0e0e0;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: all 0.2s;
+}
+
+.card-item:active {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #ffffff, #fafafa);
+    transition: background 0.2s;
+}
+
+.card-header:active {
+    background: linear-gradient(to right, #f9f9f9, #f5f5f5);
+}
+
+.card-title-section {
+    flex: 1;
+    min-width: 0;
+}
+
+.card-name {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-company {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    display: block;
+    margin-top: 3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.expand-btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--primary-color);
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-details {
+    padding: 14px 16px;
+    background: #fafafa;
+    border-top: 1px solid #e0e0e0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.detail-row {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.detail-row:last-child {
+    margin-bottom: 0;
+}
+
+.detail-label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.detail-value {
+    font-size: 0.95rem;
+    color: #333;
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.detail-value a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    flex: 1;
+}
+
+.detail-value a:active {
+    text-decoration: underline;
+}
+
+.copy-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #666;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+.copy-btn:active {
+    background: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.group-tag {
+    background: #e3f2fd;
+    color: #1976d2;
+    border: 0.5px solid #90caf9;
+}
+
+.event-tag {
+    background: #f3e5f5;
+    color: #7b1fa2;
+    border: 0.5px solid #ce93d8;
+}
+
+.card-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #ddd;
+}
+
+.btn-delete {
+    flex: 1;
+    padding: 8px 12px;
+    background: #ffcdd2;
+    color: #c62828;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-delete:active {
+    background: #ef5350;
+    color: white;
+}
